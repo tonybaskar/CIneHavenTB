@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Default Light Mode Styles  */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f1f1f1;
+    color: #2e2e2e;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+body.dark-mode .container-fluid {
+    background-color:#1f1f1f; 
+    color: #ffffff; 
+    
+}
+body.dark-mode .navbar-toggler {
+    background-color: #ffffff;
+    color: #ffffff; 
+    border: #121212;
+}
+
+body.dark-mode .navbar-nav {
+    background-color: #1f1f1f; 
+    border-bottom: 1px solid #444; 
+}
+
+body.dark-mode .navbar .nav-link {
+    color: #ffffff; 
+}
+
+body.dark-mode .navbar .nav-link:hover {
+    color: #ffcc00; 
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    border: none; 
+}
+
+body.dark-mode .card:hover {
+    background-color: #292929; 
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); 
+}
+
+/* Dark Mode Button */
+body.dark-mode #dark-mode-toggle {
+    background-color: #ffffff; 
+    color: #333333; 
+    border: 1px solid #444; 
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #f1f1f1; 
+    color: #333333; 
+}
+
+/* Dark Mode for Images */
+
+body.dark-mode img {
+    object-fit: contain;
+    filter: brightness(0.9); 
+}
+
+/* Footer Dark Mode Styles */
+
+body.dark-mode footer {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+body.dark-mode footer a {
+    color: rgb(98, 9, 240); 
+    text-decoration: none;
+}
+
+body.dark-mode footer a:hover {
+    color: #FF5722; 
+    text-decoration: underline;
+}
+
+/* Media Queries for Dark Mode */
+@media (max-width: 768px) {
+    body.dark-mode .card {
+        margin-bottom: 15px;
+    }
+
+    body.dark-mode #dark-mode-toggle {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body.dark-mode .navbar-nav {
+        text-align: center; 
+    }
+
+    body.dark-mode .card img {
+        max-height: 80px; 
+    }
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movies</title>
+    <link rel="shortcut icon" type="x-icon" href="assets/images/cinehaventitle.png"/>
+    <link rel="stylesheet" href="assets/css/addMovies.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="myMovies.html">My Movies</a>
+            <a href="schedule.html">Schedule</a>
+        </nav>
+    </header>
+    <main>
+        <section class="add-movies-container">
+            <h1>Add a New Movie</h1>
+            <form id="add-movie-form">
+                <div class="form-group">
+                    <label for="movie-name">Movie Name</label>
+                    <input type="text" id="movie-name" placeholder="Enter movie name" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-director">Director</label>
+                    <input type="text" id="movie-director" placeholder="Enter director's name" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-rating">Rating</label>
+                    <input type="number" id="movie-rating" placeholder="Enter rating (1-10)" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-image">Image URL</label>
+                    <input type="url" id="movie-image" placeholder="Enter movie poster URL" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Movie</button>
+            </form>
+        </section>
+    </main>
+    <script src="assets/js/addMovies.js"></script>
+</body>
+</html>

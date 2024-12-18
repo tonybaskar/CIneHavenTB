@@ -1,0 +1,97 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f1f1f1;
+    color: #2e2e2e;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 1em;
+}
+
+header nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.movies-container {
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.movie-card {
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    margin: 0.5em 0;
+}
+
+.movie-card p {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    margin: 0.3em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.btn-watch {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.btn-like {
+    background: #28a745;
+    color: #ffffff;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+.btn-like.active {
+    background: #218838;
+}
+
+@media (max-width: 768px) {
+    .movie-card img {
+        height: 150px;
+    }
+}
